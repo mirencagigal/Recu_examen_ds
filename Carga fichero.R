@@ -8,5 +8,14 @@ colnames(muestra01)
 
 names(muestra01) <- c("NifCif", "nombre", "genero")
 names(muestra01)
-
 #cambio los nombres de las variables
+
+library(stringr)
+muestra01$NifCif
+regexp <- "([[:alpha:]]{1})([[:digit:]]{8})"
+grepl(pattern = regexp, x = muestra01$NifCif)
+
+str_detect(muestra01$NifCif, "^a") 
+
+
+#no hay ningun registro que empieza por una letra y luego tenga 8 caracteres
