@@ -4,3 +4,9 @@ dim(muestra01)
 
 colnames(muestra01)
 #tiene 3 columnas: var1,var2 y var3.
+
+
+names(muestra01) <- c("NifCif", "nombre", "genero")
+names(muestra01)
+
+#cambio los nombres de las variables
